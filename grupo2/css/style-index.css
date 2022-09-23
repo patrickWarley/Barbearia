@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:wght@500&family=Raleway:wght@300&display=swap');
+
+/*Corpo geral do site*/
+
+
+/*Cabeçalho*/
+
+header {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.menu {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    padding: 8px;
+}
+
+.logo {
+    color: blue;
+    border: 2px solid red;
+    background-color: white;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+.titulo-logo {
+    color: blue;
+    border: 2px solid blue;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.logo:hover {
+    color: red;
+    border: 2px solid blue;
+    transition: 0.5s;
+}
+
+.titulo-logo:hover {
+    color: red;
+    border: 2px solid red;
+    transition: 0.5s;
+}
+
+.conjunto-opcoes-menu {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.opcao-menu {
+    padding: 16px;
+    color: red;
+    text-decoration: none;
+}
+
+.opcao-menu:hover {
+    background-color: white;
+    color: blue;
+    transition: 0.4s;
+}
+
+.banner-topo {
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 500px;
+}
+
+.banner-img:hover {
+    backdrop-filter: ;
+    scale: 1.1;
+    transition: 2s ease-in;
+    filter: blur(80%);
+}
+
+.botao-contato {
+    padding: 24px;
+    background-color: white;
+    color: blue;
+    border: none;
+    cursor: pointer;
+}
+
+.botao-contato:hover {
+    color: white;
+    background-color: blue;
+    transition: 0.2s;
+}
+
+.titulo-banner {
+    position: absolute;
+    left: 500px;
+    bottom: 50%;
+    color: white;
+    text-align: center;
+}
