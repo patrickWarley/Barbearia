@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --gray: #3d3636;
+}
+
+#titulo {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input,
+button {
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 1em;
+    display: flex;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.campo input[type="text"],
+.campo input[type="email"] {
+    padding: 0.5em;
+    border: 0.5px solid;
+    color: rgb(13, 13, 13);
+    display: block;
+    width: 300px;
+    height: 40px;
+}
+
+.campo textarea {
+    border: 0.5px solid;
+    color: black;
+    padding: 1.5em;
+    display: block;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.botao {
+    font-size: 1.2em;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    margin-bottom: 50px;
+    color: rgb(20, 18, 18);
+    padding: 15px;
+    text-shadow: 1px 1px 1px rgb(12, 12, 12);
+    transform: translate(-50, -50);
+}
+
+.botao:hover {
+    background: #db1414;
+    color: rgb(255, 255, 255);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+.socorro {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+}
+
+.imagem {
+    width: 50%;
+    height: 100%;
+    background-image: url("../img/contatoImg.jpeg");
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: cover;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+/*Menu*/
+
+
+/*Menu*/
+
+
+/*Menu*/
+
+.menu {
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(rgb(43, 43, 43), black);
+    padding: 8px;
+    width: 100%;
+}
+
+.logo {
+    width: 160px;
+    height: 90px;
+}
+
+.conjunto-opcoes-menu {
+    border-radius: 8px;
+    padding: 8px;
+}
+
+@keyframes animacao-opcaomenu {
+    from {
+        border: 1px inset black;
+    }
+    to {
+        border: 1px inset goldenrod;
+    }
+}
+
+.opcao-menu {
+    animation: animacao-opcaomenu 10s ease-out infinite;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.opcao-menu:hover {
+    background-color: black;
+    color: goldenrod;
+    opacity: (40%);
+    transition: 0.5s;
+}
+
+
+/*Rodapé*/
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(black, rgb(43, 43, 43));
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-rodape {
+    margin: 16px;
+    width: 230px;
+    height: 140px;
+}
+
+#texto-rodape {
+    text-align: center;
+    color: goldenrod;
+    font-family: 'Oswald', sans-serif;
+}
+
+.sub-container-rodape {
+    display: flex;
+    flex-direction: row;
+}

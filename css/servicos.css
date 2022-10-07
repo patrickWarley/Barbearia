@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,200&family=Lato:wght@300;400;700;900&family=Oswald&display=swap');
+
+/*reset*/
+
+:root {
+    --gray: #3d3636;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-image: url("../img/servicostopo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.planoDeFundoParallax {
+    background-attachment: fixed
+}
+
+
+/*Menu*/
+
+header {
+    font-family: 'Oswald', sans-serif;
+}
+
+.servicos {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.servicos .fundoMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--gray);
+    padding: 30px;
+    opacity: 90%;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.opcao-menu {
+    font-family: 'Oswald', sans-serif;
+}
+
+.servicos .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.servicos .menu .borda-logo {
+    color: red;
+    border: 2px solid white;
+    border-radius: 360px;
+    padding: 3px;
+}
+
+.servicos .menu .borda-logo:hover {
+    color: blue;
+    border: 2px solid red;
+    transition: 0.5s;
+}
+
+.servicos .menu .logo {
+    color: blue;
+    border: 2px solid red;
+    background-color: white;
+    padding: 2px;
+    border-radius: 360px;
+    width: 60px;
+    height: 60px;
+}
+
+.servicos .menu .logo:hover {
+    color: red;
+    border: 2px solid blue;
+    transition: 0.5s;
+}
+
+
+/*banner*/
+
+.banner-instagram {
+    position: relative;
+    display: flex;
+    flex-wrap: row;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 10px;
+    width: 100%;
+    height: 600px;
+}
+
+.shadowBox {
+    box-shadow: 10px 10px 55px 12px rgba(0, 0, 0, 0.50);
+}
+
+.imageCard .icon {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+.tesoura {
+    background-image: url("../img/icons/tesoura.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lamina {
+    background-image: url("../img/icons/lamina_barbear.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imageCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--gray);
+    width: 33%;
+    height: 600px;
+    transition: all 0s;
+    z-index: 0;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.imageCard .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: goldenrod;
+    margin-top: 5px;
+    font-size: 1.2em;
+}
+
+.imageCard img {
+    margin-top: 20px;
+    animation: zoomIn 2s;
+}
+
+.imageCard-1 {
+    margin-right: 40%;
+}
+
+.imageCard-2 {}
+
+.imageCard-3 {
+    margin-left: 40%;
+}
+
+.imageCard:hover,
+.imageCard-1:hover,
+.imageCard-2:hover {
+    transition-delay: 1s;
+}
+
+.activeRight {
+    animation: marginRight;
+    animation-duration: 2s;
+}
+
+.activeLeft {
+    animation: marginLeft;
+    animation-duration: 2s;
+}
+
+.activeMeio {
+    animation: fade;
+    animation-duration: 2s;
+}
+
+@keyframes marginRight {
+    0% {
+        margin-right: 40%;
+    }
+    50% {
+        margin-right: 70%;
+    }
+    100% {
+        margin-right: 40%;
+    }
+}
+
+@keyframes marginLeft {
+    0% {
+        margin-left: 40%;
+    }
+    50% {
+        margin-left: 70%;
+    }
+    100% {
+        margin-left: 40%;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.imageCard-1 img,
+.imageCard-2 img,
+.imageCard img {
+    width: 90%;
+    height: 80%;
+}
+
+header {
+    margin-bottom: 0;
+}
+
+
+/*Configuração menu topo de pagina*/
+
+.conjunto-opcoes-menu {
+    border: none !important;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/*banner*/
+
+
+/*Seção de resumo*/
+
+.mainTitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    color: white;
+    text-shadow: 4px 4px 12px goldenrod;
+    margin: 50px 50px;
+}
+
+.apresentacao {
+    width: 50%;
+    color: white;
+}
+
+.botao {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -4px 1px 37px -5px rgba(0, 0, 0, 0.90);
+}
+
+.botaoVejaMais {
+    background-color: black;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+}
+
+.botaoVejaMais:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+section {
+    padding: 50px;
+    min-height: 90vh;
+    position: relative;
+    text-align: center;
+}
+
+.resumo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+
+/*servicos, com preço e tal*/
+
+.listServicos {
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(110, 110, 110, 1) 89%, rgba(78, 77, 77, 1) 100%);
+}
+
+.listServicos .mainTitle {
+    color: black;
+    font-size: 60px;
+    text-shadow: none;
+    margin-top: 10px;
+}
+
+.content {
+    position: relative;
+    margin-top: 50px;
+    width: 60%;
+}
+
+
+/*formularioAgenda*/
+
+.alert.show {
+    opacity: 100%;
+}
+
+.alert {
+    display: block;
+    opacity: 0%;
+    width: 100%;
+    color: #b0c5d1;
+    padding: 10px;
+    transition: all 1s;
+}
+
+.botaoEnviar {
+    background-color: black;
+    color: goldenrod;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 20px;
+    border: 1px solid goldenrod;
+}
+
+.botaoEnviar:hover {
+    background-color: goldenrod;
+    color: black;
+    cursor: pointer;
+}
+
+.formularioAgenda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 55px 12px rgba(0, 0, 0, 0.50);
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+
+.formContainer form {
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.formContainer select {
+    font-size: large;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.formContainer input {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    border: 0;
+    height: 50px;
+    font-size: large;
+}
+
+.formContainer label {
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: inherit;
+    margin-bottom: 10px;
+}
+
+.equipe {
+    display: flex;
+    align-items: flex-start;
+}
+
+.equipe-section {
+    display: flex;
+    justify-content: center;
+}
+
+.equipeDescr {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: medium;
+}
+
+.fotoEquipe {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-left: 20px;
+    transition: transform;
+}
+
+.equipecard {
+    align-items: center;
+    height: 200px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+}
+
+.fotoEquipe:hover {
+    transform: scale(1.4);
+}
+
+
+/*footer*/
+
+.iconFooter {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    color: goldenrod;
+    cursor: pointer;
+}
+
+.iconFooter a,
+a:hover,
+a:visited {
+    text-decoration: none;
+}
+
+.instagram:hover {
+    display: block;
+    color: #dd2a7b;
+    ;
+    font-size: 40px;
+}
+
+.whatsapp:hover {
+    display: block;
+    color: #25D366;
+    font-size: 40px;
+}
+
+.facebook:hover {
+    display: block;
+    color: #1778f2;
+    font-size: 40px;
+}
+
+.tiktok:hover {
+    display: block;
+    color: white;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px #dd2a7b;
+}
+
+.redesSocias {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footerPage {
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(rgb(43, 43, 43), black);
+    text-align: center;
+    color: goldenrod;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sub-container-rodape {
+    margin: 16px 0 0 0;
+}

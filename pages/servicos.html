@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3842b7f66e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/servicos.css">
+    <link rel="stylesheet" href="../css/style-index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,200&family=Lato:wght@300;400;700;900&family=Oswald&display=swap');
+    </style>
+    <title>Nossos Serviços - CorteCerto Barber Studio</title>
+</head>
+
+<body class="planoDeFundoParallax">
+    <!--Cabeçalho do site - Barra contendo o logotipo e o menu-->
+
+    <header>
+
+        <nav class="menu">
+
+            <div class="borda-logo">
+                <img class="logo" src="../img/logo/Logo-Corte-Certo-branco.png" alt="Logotipo da barbearia">
+            </div>
+
+            <div class="conjunto-opcoes-menu">
+                <a href="../index.html" class="opcao-menu">Início</a>
+                <a href="quemSomos.html" class="opcao-menu">Quem somos</a>
+                <a href="servicos.html" class="opcao-menu">Nossos serviços</a>
+                <a href="contato.html" class="opcao-menu">Fale conosco</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="resumo">
+
+            <div class="apresentacao">
+                <img class="logo" src="../img/logo/Logo-Corte-Certo-branco.png" style="width: 300px; height:180px;" alt="Logotipo da barbearia">
+                <p>Para saber mais sobre nossos serviços e só clicar no botão abaixo.</p>
+                <a href="#listServicos" class="botao botaoVejaMais">Veja mais</a>
+            </div>
+
+            <div class="formularioAgenda">
+                <div class="formContainer">
+                    <h1>Agende a sua visita!</h1>
+                    <p>Escolha a data e horario desejado e entraremos em contato!</p>
+                    <form action="#" id="agendarFormulario">
+                        <div class="row">
+                            <div class="col">
+                                <label for="nome">Nome</label>
+                                <input type="text" placeholder="Nome" id="nome" name="nome" required />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <label for="Telefone">Telefone</label>
+                                <input type="tel" name="telfone" id="telefone" placeholder="(99)9999 - 9999" required />
+                            </div>
+
+                            <div class="col">
+                                <label for="date">Data</label>
+                                <input type="date" id="date" name="date" required />
+                            </div>
+
+                            <div class="col">
+                                <label for="hora">Hora</label>
+                                <input type="time" id="hora" name="hora" required />
+                            </div>
+                        </div>
+
+                        <div class="row"><label for="tipoCorte">O que você deseja fazer?</label></div>
+                        <div class="row">
+                            <select name="tipoCorte">
+                <option value="1" selected>Corte de cabelo</option>
+                <option value="2">Barba</option>
+                <option value="3">Barba + Cabelo</option>
+              </select>
+                        </div>
+
+                        <button type="submit" class="botao botaoEnviar">Agendar</button>
+                        <div id="alertMessage" class="alert"></div>
+                </div>
+                </form>
+            </div>
+        </section>
+        <section class="listServicos" id="listServicos">
+            <h1 class="mainTitle">Barba & cabelo</h1>
+            <div class="container banner-instagram">
+                <div class="imageCard imageCard-1 shadowBox">
+                    <img src="../img/barba-modelada.jpg" alt="Barba modelada" id="imgEsquerda" />
+                    <span class="text">Barba</span>
+                    <span class="text"><span class="icon tesoura"></span>$ 80</span>
+                </div>
+                <div class="imageCard imageCard-2 shadowBox">
+                    <img src="../img/haircut1.jpg" alt="Corte disfarçe" id="imgMeio">
+                    <span class="text">Corte de cabelo</span>
+                    <span class="text"><span class="icon lamina"></span>$ 100</span>
+                </div>
+                <div class="imageCard imageCard-3 shadowBox">
+                    <img src="../img/haircut2.jpg" alt="Corte simples" id="imgDireita">
+                    <span class="text">Barba e cabelo</span>
+                    <span class="text"><span class="icon tesoura"></span>+ $ 150 +<span class="icon lamina"></span></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="equipe-section">
+            <div class="content">
+                <h1 class="mainTitle">Equipe</h1>
+                <div class="row equipecard">
+                    <div><img class="fotoEquipe" src="../img/imagemEquipe.jpg" alt="Mustache"></div>
+                    <div class="equipeDescr">
+                        Junior - Rei do pezinho.
+                        <nav class="redesSocias">
+                            <div class="iconFooter ">
+                                <i class="fa-brands whatsapp fa-whatsapp"><a href="#"></a></i>
+                            </div>
+                            <div class="iconFooter">
+                                <i class="fa-brands instagram fa-instagram"><a href="#"></a></i>
+                            </div>
+                            <div class="iconFooter">
+                                <i class="fa-brands facebook fa-facebook"><a href="#"></a></i>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class=" row equipecard">
+                    <div class=""><img class="fotoEquipe" src="../img/imagemEquipe.jpg" alt="Mustache"></div>
+                    <div class="equipeDescr">
+                        Aline - Mestre das tesouras
+                        <nav class="redesSocias">
+                            <div class="iconFooter ">
+                                <i class="fa-brands whatsapp fa-whatsapp"><a href="#"></a></i>
+                            </div>
+                            <div class="iconFooter">
+                                <i class="fa-brands instagram fa-instagram"><a href="#"></a></i>
+                            </div>
+                            <div class="iconFooter">
+                                <i class="fa-brands facebook fa-facebook"><a href="#"></a></i>
+                            </div>
+                    </div>
+                </div>
+                <div class="row equipecard">
+                    <div><img class="fotoEquipe" src="../img/imagemEquipe.jpg" alt="Mustache"></div>
+                    <div class="equipeDescr">
+                        Igor - Imperador do disfarce
+                        <nav class="redesSocias">
+                            <div class="iconFooter ">
+                                <i class="fa-brands whatsapp fa-whatsapp"><a href="#"></a></i>
+                            </div>
+                            <div class="iconFooter">
+                                <i class="fa-brands instagram fa-instagram"><a href="#"></a></i>
+                            </div>
+                            <div class="iconFooter">
+                                <i class="fa-brands facebook fa-facebook"><a href="#"></a></i>
+                            </div>
+                    </div>
+                </div>
+                <div class="row equipecard">
+                    <div><img class="fotoEquipe" src="../img/imagemEquipe.jpg" alt="Mustache"></div>
+                    <div class="equipeDescr">
+                        Patrick - Caixa
+                        <nav class="redesSocias">
+                            <div class="iconFooter ">
+                                <i class="fa-brands whatsapp fa-whatsapp"><a href="#"></a></i>
+                            </div>
+                            <div class="iconFooter">
+                                <i class="fa-brands instagram fa-instagram"><a href="#"></a></i>
+                            </div>
+                            <div class="iconFooter">
+                                <i class="fa-brands facebook fa-facebook"><a href="#"></a></i>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class=" footerPage">
+
+        <div class="sub-container-rodape">
+            <img class="logo-rodape" src="../img/logo/Logo-Corte-Certo-branco.png" alt="Logotipo da barbearia" style="width: 150px; height: 80px">
+        </div>
+
+        <nav class="redesSocias">
+            <div class="iconFooter ">
+                <i class="fa-brands whatsapp fa-whatsapp"><a href="#"></a></i>
+            </div>
+            <div class="iconFooter">
+                <i class="fa-brands instagram fa-instagram"><a href="#"></a></i>
+            </div>
+            <div class="iconFooter">
+                <i class="fa-brands facebook fa-facebook"><a href="#"></a></i>
+            </div>
+            <div class="iconFooter">
+                <i class="fa-brands tiktok  fa-tiktok"><a href="#"></a></i>
+            </div>
+        </nav>
+
+        <div class="informacoes">
+
+            <p class="copyright">
+                <i class="fa-solid fa-copyright"></i>2022 CorteCerto Barber Studio - Projeto do Grupo 2 - Programadores Cariocas
+            </p>
+        </div>
+    </footer>
+    <script src="../js/servicos.js">
+    </script>
+</body>
+
+</html>
