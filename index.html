@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CorteCerto Barber Studio - Início</title>
+
     <link rel="stylesheet" href="./css/style-index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,200&family=Lato:wght@300;400;700;900&family=Oswald&display=swap');
     </style>
@@ -15,206 +18,239 @@
 
 <body>
     <!--Cabeçalho do site - Barra contendo o logotipo e o menu-->
-    <header>
+    <header class="header">
+        <span class="logo"> <img src="./img/logo/Logo-Corte-Certo-dourado.png" alt="Logotipo da barbearia"></span>
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu" />
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
 
-        <nav class="menu">
-
-            <div class="borda-logo">
-                <img class="logo" src="./img/logo/Logo-Corte-Certo-branco.png" alt="Logotipo da barbearia">
-            </div>
-
-            <div class="conjunto-opcoes-menu">
-                <a href="index.html" class="opcao-menu">Início</a>
-                <a href="./pages/quemSomos.html" class="opcao-menu">Quem somos</a>
-                <a href="./pages/servicos.html" class="opcao-menu">Nossos serviços</a>
-                <a href="./pages/contato.html" class="opcao-menu">Fale conosco</a>
-            </div>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="./pages/quemSomos.html" class="opcao-menu">Quem somos</a></li>
+                <li><a href="index.html" class="opcao-menu">Início</a></li>
+                <li><a href="./pages/servicos.html" class="opcao-menu">Nossos serviços</a></li>
+                <li><a href="./pages/contato.html" class="opcao-menu">Fale conosco</a></li>
+            </ul>
         </nav>
-
     </header>
 
-
     <main>
-
         <!--Banner exibido no topo da página-->
+        <section>
+            <div class="banner-topo">
+                <img src="./img/pexels-nikolaos-dimou-1319461.jpg" alt="Banner de barnearia" class="banner-img">
 
-        <div class="banner-topo">
-            <img src="./img/pexels-nikolaos-dimou-1319461.jpg" alt="Banner de barnearia" class="banner-img">
 
+                <div class="titulo-botao-banner">
+                    <h1 id="titulo-banner">Não deixe de ficar na régua!</h1>
 
-            <div class="titulo-botao-banner">
-                <h1 id="titulo-banner">Não deixe de ficar na régua!</h1>
+                    <p class="texto-banner">Aqui na CorteCerto você encontra profissionais qualificados para te
+                        proporcionar a <b>melhor experiência</b> em cortes de cabelo e barba no Rio de Janeiro!</p>
 
-                <p class="texto-banner">Aqui na CorteCerto você encontra profissionais qualificados para te proporcionar a <b>melhor experiência</b> em cortes de cabelo e barba no Rio de Janeiro!</p>
-
-                <a href="./pages/servicos.html" class="botao-contato">Agendar um atendimento</a>
+                    <a href="./pages/servicos.html" class="botao-contato">Agendar um atendimento</a>
+                </div>
             </div>
-        </div>
-
-        <div class="janela">
-
-        </div>
+        </section>
 
         <!--Seção "Quem somos"-->
-        <div class="fundo-colorido">
-            <div class="secao-quemsomos">
+        <section>
+            <div class="fundo-colorido">
+                <div class="secao-quemsomos">
 
-                <article>
-                    <h1 class="titulo">Um pouco de nossa história</h1>
-                    <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus ligula eu massa vulputate lacinia. Mauris et ligula orci. Sed rutrum finibus arcu non sollicitudin. Aenean non semper est. Donec finibus varius ipsum. Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit. Phasellus at ex sit amet dolor malesuada tincidunt. Nam non condimentum elit. Donec sed est elit. Sed nisl neque, imperdiet ac tincidunt id, suscipit sed est. Sed dignissim quam id vestibulum
-                        malesuada. O resto é história...
-                    </p>
-                    <a href="./pages/quemSomos.html" class="botao-saibamais">Ler mais</a>
-                </article>
+                    <article>
+                        <h1 class="titulo">Um pouco de nossa história</h1>
+                        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus ligula eu
+                            massa vulputate lacinia. Mauris et ligula orci. Sed rutrum finibus arcu non sollicitudin.
+                            Aenean non semper est. Donec finibus varius ipsum. Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Phasellus at ex sit amet dolor malesuada
+                            tincidunt. Nam non condimentum elit. Donec sed est elit. Sed nisl neque, imperdiet ac
+                            tincidunt id, suscipit sed est. Sed dignissim quam id vestibulum
+                            malesuada. O resto é história...
+                        </p>
+                        <a href="./pages/quemSomos.html" class="botao-saibamais">Ler mais</a>
+                    </article>
+                </div>
+
             </div>
-
-        </div>
-
+        </section>
 
         <!--Seção de serviços-->
+        <section>
+            <div class="secao-servicos">
+                <h1 class="titulo-servicos">Algumas de nossas especialidades</h1>
 
-        <div class="secao-servicos">
-            <h1 class="titulo-servicos">Algumas de nossas especialidades</h1>
-
-            <div class="cards-servicos">
-
-
-                <section class="card-servico">
-                    <h3 class="titulo-card">Corte simples</h3>
-
-                    <img src="../img/corte-simples.jpg" alt="Corte de cabelo simples" class="img-card">
-
-                    <p class="preco-card"><span class="comp-preco-card">A partir de </span>R$ 00,00</p>
-                </section>
-
-                <section class="card-servico">
-                    <h3 class="titulo-card">Corte personalizado</h3>
-
-                    <img src="../img/corte-disfarce.jpg" alt="Corte de cabelo com disfarce" class="img-card">
-
-                    <p class="preco-card"><span class="comp-preco-card">A partir de </span>R$ 00,00</p>
-                </section>
-
-                <section class="card-servico">
-                    <h3 class="titulo-card">Barba modelada</h3>
-
-                    <a href="#"><img src="../img/barba-modelada.jpg" alt="Barba modelada" class="img-card"></a>
-
-                    <p class="preco-card"><span class="comp-preco-card">A partir de </span>R$ 00,00</p>
-                </section>
+                <div class="cards-servicos">
 
 
+                    <section class="card-servico">
+                        <h3 class="titulo-card">Corte simples</h3>
+
+                        <img src="../img/corte-simples.jpg" alt="Corte de cabelo simples" class="img-card">
+
+                        <p class="preco-card"><span class="comp-preco-card">A partir de </span>R$ 00,00</p>
+                    </section>
+
+                    <section class="card-servico">
+                        <h3 class="titulo-card">Corte personalizado</h3>
+
+                        <img src="../img/corte-disfarce.jpg" alt="Corte de cabelo com disfarce" class="img-card">
+
+                        <p class="preco-card"><span class="comp-preco-card">A partir de </span>R$ 00,00</p>
+                    </section>
+
+                    <section class="card-servico">
+                        <h3 class="titulo-card">Barba modelada</h3>
+
+                        <a href="#"><img src="../img/barba-modelada.jpg" alt="Barba modelada" class="img-card"></a>
+
+                        <p class="preco-card"><span class="comp-preco-card">A partir de </span>R$ 00,00</p>
+                    </section>
+
+
+
+                </div>
+
+                <a href="./pages/servicos.html" class="botao-maisservicos">Ver mais serviços</a>
 
             </div>
-
-            <a href="./pages/servicos.html" class="botao-maisservicos">Ver mais serviços</a>
-
-        </div>
+        </section>
 
 
         <!--Banner exibido na parte intermediaria da página - Beleza não é gasto, é investimento-->
+        <section>
+            <div class="banner-intermediario">
+                <img class="banner-img2" src="./img/pexels-mídia-897273.jpg"
+                    alt="Banner central e uma frase informando que Beleza não é gasto, é investimento!">
 
-        <div class="banner-intermediario">
-            <img class="banner-img2" src="./img/pexels-mídia-897273.jpg" alt="Banner central e uma frase informando que Beleza não é gasto, é investimento!">
+                <h1 id="titulo-banner2">Beleza não é gasto, é investimento!</h1>
 
-            <h1 id="titulo-banner2">Beleza não é gasto, é investimento!</h1>
+                <a href="./pages/servicos.html#listServicos" class="botao-contato2">Agendar um atendimento</a>
 
-            <a href="./pages/servicos.html#listServicos" class="botao-contato2">Agendar um atendimento</a>
-
-        </div>
+            </div>
+        </section>
 
 
         <!--Seção de Depoimentos de case de sucesso-->
+        <section>
+            <div class="secao-depoimentos">
+                <h1 id="titulo-depoimentos">Depoimentos de clientes</h1>
 
-        <div class="secao-depoimentos">
-            <h1 id="titulo-depoimentos">Depoimentos de clientes</h1>
+                <p class="texto">Veja alguns depoimentos de clientes que recomendam os nossos serviços</p>
 
-            <p class="texto">Veja alguns depoimentos de clientes que recomendam os nossos serviços</p>
+                <div class="cards-depoimentos">
+                    <div class="card-depoimentos">
+                        <img src="./img/pessoa1.jpg" alt="Corte de cabelo simples" class="img-card">
 
-            <div class="cards-depoimentos">
+                        <h3 class="titulo-card-depoimentos">"Melhor corte de todos..."</h3>
 
+                        <p class="texto-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo enim,
+                            interdum at ligula sed, semper fermentum lacus. Vivamus rutrum volutpat venenatis. Fusce
+                            elit
+                            purus, iaculis et finibus at, dapibus ut quam. Class aptent taciti
+                            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante
+                            ipsum
+                            primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc dapibus vehicula
+                            suscipit. Mauris quis ligula nisi.</p>
+                    </div>
 
-                <section class="card-depoimentos">
-                    <img src="./img/pessoa1.jpg" alt="Corte de cabelo simples" class="img-card">
+                    <div class="card-depoimentos">
+                        <img src="./img/pessoa4.jpg" alt="Corte de cabelo com disfarce" class="img-card">
 
-                    <h3 class="titulo-card-depoimentos">"Melhor corte de todos..."</h3>
+                        <h3 class="titulo-card-depoimentos">"Há tempos buscava um corte tão perfeito..."</h3>
 
-                    <p class="texto-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo enim, interdum at ligula sed, semper fermentum lacus. Vivamus rutrum volutpat venenatis. Fusce elit purus, iaculis et finibus at, dapibus ut quam. Class aptent taciti
-                        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc dapibus vehicula suscipit. Mauris quis ligula nisi.</p>
-                </section>
+                        <p class="texto-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo enim,
+                            interdum at ligula sed, semper fermentum lacus. Vivamus rutrum volutpat venenatis. Fusce
+                            elit
+                            purus, iaculis et finibus at, dapibus ut quam. Class aptent taciti
+                            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante
+                            ipsum
+                            primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc dapibus vehicula
+                            suscipit. Mauris quis ligula nisi.</p>
+                    </div>
 
-                <section class="card-depoimentos">
-                    <img src="./img/pessoa4.jpg" alt="Corte de cabelo com disfarce" class="img-card">
+                    <div class="card-depoimentos">
+                        <img src="./img/pessoa3.jpg" alt="Barba modelada" class="img-card">
 
-                    <h3 class="titulo-card-depoimentos">"Há tempos buscava um corte tão perfeito..."</h3>
-
-                    <p class="texto-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo enim, interdum at ligula sed, semper fermentum lacus. Vivamus rutrum volutpat venenatis. Fusce elit purus, iaculis et finibus at, dapibus ut quam. Class aptent taciti
-                        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc dapibus vehicula suscipit. Mauris quis ligula nisi.</p>
-                </section>
-
-                <section class="card-depoimentos">
-                    <img src="./img/pessoa3.jpg" alt="Barba modelada" class="img-card">
-
-                    <h3 class="titulo-card-depoimentos">"Atendimento excelente e serviço impecável!"</h3>
-
-
-                    <p class="texto-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo enim, interdum at ligula sed, semper fermentum lacus. Vivamus rutrum volutpat venenatis. Fusce elit purus, iaculis et finibus at, dapibus ut quam. Class aptent taciti
-                        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc dapibus vehicula suscipit. Mauris quis ligula nisi.</p>
-                </section>
-
-                <section class="card-depoimentos">
-                    <img src="./img/pessoa6.jpg" alt="Barba modelada" class="img-card">
-
-                    <h3 class="titulo-card-depoimentos">"Faço questão de vir na CorteCerto!"</h3>
+                        <h3 class="titulo-card-depoimentos">"Atendimento excelente e serviço impecável!"</h3>
 
 
-                    <p class="texto-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo enim, interdum at ligula sed, semper fermentum lacus. Vivamus rutrum volutpat venenatis. Fusce elit purus, iaculis et finibus at, dapibus ut quam. Class aptent taciti
-                        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc dapibus vehicula suscipit. Mauris quis ligula nisi.</p>
-                </section>
+                        <p class="texto-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo enim,
+                            interdum at ligula sed, semper fermentum lacus. Vivamus rutrum volutpat venenatis. Fusce
+                            elit
+                            purus, iaculis et finibus at, dapibus ut quam. Class aptent taciti
+                            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante
+                            ipsum
+                            primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc dapibus vehicula
+                            suscipit. Mauris quis ligula nisi.</p>
+                    </div>
+
+                    <div class="card-depoimentos">
+                        <img src="./img/pessoa6.jpg" alt="Barba modelada" class="img-card">
+
+                        <h3 class="titulo-card-depoimentos">"Faço questão de vir na CorteCerto!"</h3>
+
+
+                        <p class="texto-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo enim,
+                            interdum at ligula sed, semper fermentum lacus. Vivamus rutrum volutpat venenatis. Fusce
+                            elit
+                            purus, iaculis et finibus at, dapibus ut quam. Class aptent taciti
+                            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante
+                            ipsum
+                            primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc dapibus vehicula
+                            suscipit. Mauris quis ligula nisi.</p>
+                    </div>
+
+                </div>
+
 
             </div>
-
-
-        </div>
-
+        </section>
 
         <!--Seção Onde Estamos-->
-        <div class="fundo-colorido">
-            <div class="onde-estamos">
+        <section>
+            <div class="fundo-colorido">
+                <div class="onde-estamos">
 
-                <h1 class="titulooe">Onde estamos</h1>
+                    <h1 class="titulooe">Onde estamos</h1>
 
-                <p class="textooe">Clique no mapa abaixo e traçe a melhor rota para conhecer nossos serviços!</p>
+                    <p class="textooe">Clique no mapa abaixo e traçe a melhor rota para conhecer nossos serviços!</p>
 
-                <!---LOCALIZAÇÃO-->
-                <div class="mapas">
+                    <!---LOCALIZAÇÃO-->
+                    <div class="mapas">
 
-                    <div class="bloco borda localizaçao">
+                        <div class="bloco borda localizaçao">
 
-                        <div class="container-mapas" id="scroll">
+                            <div class="container-mapas" id="scroll">
 
-                            <div class="mapaBox">
+                                <div class="mapaBox">
 
-                                <p class="nome-unidades">Unidade Freguesia</p>
-                                <iframe src="https://maps.google.com/maps?q=estrada%20dos%20tr%C3%AAs%20rios,%20123&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                <p class="endereco-unidade">Estrada dos Três Rios, 123</p>
+                                    <p class="nome-unidades">Unidade Freguesia</p>
+                                    <iframe
+                                        src="https://maps.google.com/maps?q=estrada%20dos%20tr%C3%AAs%20rios,%20123&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <p class="endereco-unidade">Estrada dos Três Rios, 123</p>
 
-                            </div>
+                                </div>
 
-                            <div class="mapaBox">
+                                <div class="mapaBox">
 
-                                <p class="nome-unidades">Unidade Madureira</p>
-                                <iframe src="https://maps.google.com/maps?q=estrada%20do%20portela,%20456&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                <p class="endereco-unidade">Estrada do Portela, 456</p>
+                                    <p class="nome-unidades">Unidade Madureira</p>
+                                    <iframe
+                                        src="https://maps.google.com/maps?q=estrada%20do%20portela,%20456&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <p class="endereco-unidade">Estrada do Portela, 456</p>
 
-                            </div>
+                                </div>
 
-                            <div class="mapaBox">
+                                <div class="mapaBox">
 
-                                <p class="nome-unidades">Unidade Centro</p>
-                                <iframe src="https://maps.google.com/maps?q=rua%20do%20ouvidor,%2078&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                <p class="endereco-unidade">Rua do Ouvidor, 78</p>
+                                    <p class="nome-unidades">Unidade Centro</p>
+                                    <iframe
+                                        src="https://maps.google.com/maps?q=rua%20do%20ouvidor,%2078&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <p class="endereco-unidade">Rua do Ouvidor, 78</p>
+
+                                </div>
 
                             </div>
 
@@ -223,12 +259,13 @@
                     </div>
 
                 </div>
-
             </div>
-        </div>
+        </section>
+    </main>
 
+    <!--Rodapé do site-->
+    <footer class="rodape">
         <!--Seção de contatos-->
-
         <div class="secao-contato">
             <h1 class="titulo-contato">Entre em contato conosco</h1>
 
@@ -262,15 +299,7 @@
                             d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z" />
                     </svg></a>
             </div>
-
         </div>
-
-
-
-    </main>
-
-    <!--Rodapé do site-->
-    <footer class="rodape">
 
         <div class="sub-container-rodape">
             <img class="logo-rodape" src="./img/logo/Logo-Corte-Certo-branco.png" alt="Logotipo da barbearia">
@@ -279,7 +308,6 @@
 
         <p id="texto-rodape">&copy;2022 CorteCerto Barber Studio - Projeto do Grupo 2 - Programadores Cariocas</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 
 </html>

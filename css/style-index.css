@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,200&family=Lato:wght@300;400;700;900&family=Oswald&display=swap');
 
 /*Reset*/
-
 * {
     margin: 0;
     padding: 0;
@@ -14,67 +13,14 @@
 
 
 /*Cabeçalho*/
-
-header {
-    display: inline;
-}
-
-
 /*Menu*/
-
-.menu {
-    font-family: 'Oswald', sans-serif;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    background: linear-gradient(rgb(43, 43, 43), black);
-    padding: 8px;
-    width: 100%;
-}
-
-.logo {
-    width: 160px;
-    height: 90px;
-}
-
-.conjunto-opcoes-menu {
-    border-radius: 8px;
-    padding: 8px;
-}
-
-@keyframes animacao-opcaomenu {
-    from {
-        border: 1px inset black;
-    }
-    to {
-        border: 1px inset goldenrod;
-    }
-}
-
-.opcao-menu {
-    animation: animacao-opcaomenu 10s ease-out infinite;
-    padding: 8px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 8px;
-}
-
-.opcao-menu:hover {
-    background-color: black;
-    color: goldenrod;
-    opacity: (40%);
-    transition: 0.5s;
-}
-
-
 /*Banner*/
 
 @keyframes animacao-banner {
     from {
         transition: ease-in-out;
     }
+
     to {
         transform: scale(1.1);
     }
@@ -125,6 +71,7 @@ header {
     from {
         text-shadow: 1px 1px 1px goldenrod;
     }
+
     to {
         text-shadow: 1px 1px 1px white;
     }
@@ -218,6 +165,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .titulo-servicos {
@@ -308,6 +256,7 @@ header {
     from {
         transition: ease-in-out;
     }
+
     to {
         transform: scale(1.1);
     }
@@ -324,6 +273,7 @@ header {
     from {
         text-shadow: 1px 1px 1px goldenrod;
     }
+
     to {
         text-shadow: 1px 1px 1px white;
     }
@@ -393,6 +343,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #titulo-depoimentos {
@@ -514,7 +465,7 @@ iframe {
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    background: none!important;
+    background: none !important;
 }
 
 iframe {
