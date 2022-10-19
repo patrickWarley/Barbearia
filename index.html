@@ -36,83 +36,63 @@
 
     <main>
         <!--Banner exibido no topo da página-->
-        <section>
+        <section class="main-banner planoDeFundoParallax">
             <div class="banner-topo">
-                <img src="./img/pexels-nikolaos-dimou-1319461.jpg" alt="Banner de barnearia" class="banner-img">
-
-
                 <div class="titulo-botao-banner">
                     <h1 id="titulo-banner">Não deixe de ficar na régua!</h1>
 
                     <p class="texto-banner">Aqui na CorteCerto você encontra profissionais qualificados para te
                         proporcionar a <b>melhor experiência</b> em cortes de cabelo e barba no Rio de Janeiro!</p>
 
-                    <a href="./pages/servicos.html" class="botao-contato">Agendar um atendimento</a>
+                    <span class="botao-contato"><a href="./pages/servicos.html">Agendar</a></span>
                 </div>
             </div>
         </section>
 
         <!--Seção "Quem somos"-->
-        <section>
-            <div class="fundo-colorido">
-                <div class="secao-quemsomos">
-
-                    <article>
-                        <h1 class="titulo">Um pouco de nossa história</h1>
-                        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus ligula eu
-                            massa vulputate lacinia. Mauris et ligula orci. Sed rutrum finibus arcu non sollicitudin.
-                            Aenean non semper est. Donec finibus varius ipsum. Lorem ipsum
-                            dolor sit amet, consectetur adipiscing elit. Phasellus at ex sit amet dolor malesuada
-                            tincidunt. Nam non condimentum elit. Donec sed est elit. Sed nisl neque, imperdiet ac
-                            tincidunt id, suscipit sed est. Sed dignissim quam id vestibulum
-                            malesuada. O resto é história...
-                        </p>
-                        <a href="./pages/quemSomos.html" class="botao-saibamais">Ler mais</a>
-                    </article>
-                </div>
-
-            </div>
+        <section class="quem-somos">
+            <article>
+                <h1 class="titulo">Um pouco de nossa história</h1>
+                <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus ligula eu
+                    massa vulputate lacinia. Mauris et ligula orci. Sed rutrum finibus arcu non sollicitudin.
+                    Aenean non semper est. Donec finibus varius ipsum. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Phasellus at ex sit amet dolor malesuada
+                    tincidunt. Nam non condimentum elit. Donec sed est elit. Sed nisl neque, imperdiet ac
+                    tincidunt id, suscipit sed est. Sed dignissim quam id vestibulum
+                    malesuada. O resto é história...
+                </p>
+                <a href="./pages/quemSomos.html" class="botao-saibamais">Ler mais</a>
+            </article>
         </section>
 
         <!--Seção de serviços-->
-        <section>
-            <div class="secao-servicos">
-                <h1 class="titulo-servicos">Algumas de nossas especialidades</h1>
+        <section class="secao-servicos">
+            <h1 class="titulo-servicos">Algumas de nossas especialidades</h1>
+            <div class="cards-servicos">
+                <section class="card-servico">
+                    <h3 class="titulo-card">Corte simples</h3>
+                    <img src="../img/corte-simples.jpg" alt="Corte de cabelo simples" class="img-card">
 
-                <div class="cards-servicos">
+                    <p class="preco-card"><span class="comp-preco-card">A partir de </span>R$ 00,00</p>
+                </section>
 
+                <section class="card-servico">
+                    <h3 class="titulo-card">Corte personalizado</h3>
 
-                    <section class="card-servico">
-                        <h3 class="titulo-card">Corte simples</h3>
+                    <img src="../img/corte-disfarce.jpg" alt="Corte de cabelo com disfarce" class="img-card">
 
-                        <img src="../img/corte-simples.jpg" alt="Corte de cabelo simples" class="img-card">
+                    <p class="preco-card"><span class="comp-preco-card">A partir de </span>R$ 00,00</p>
+                </section>
 
-                        <p class="preco-card"><span class="comp-preco-card">A partir de </span>R$ 00,00</p>
-                    </section>
+                <section class="card-servico">
+                    <h3 class="titulo-card">Barba modelada</h3>
 
-                    <section class="card-servico">
-                        <h3 class="titulo-card">Corte personalizado</h3>
+                    <a href="#"><img src="../img/barba-modelada.jpg" alt="Barba modelada" class="img-card"></a>
 
-                        <img src="../img/corte-disfarce.jpg" alt="Corte de cabelo com disfarce" class="img-card">
-
-                        <p class="preco-card"><span class="comp-preco-card">A partir de </span>R$ 00,00</p>
-                    </section>
-
-                    <section class="card-servico">
-                        <h3 class="titulo-card">Barba modelada</h3>
-
-                        <a href="#"><img src="../img/barba-modelada.jpg" alt="Barba modelada" class="img-card"></a>
-
-                        <p class="preco-card"><span class="comp-preco-card">A partir de </span>R$ 00,00</p>
-                    </section>
-
-
-
-                </div>
-
-                <a href="./pages/servicos.html" class="botao-maisservicos">Ver mais serviços</a>
-
+                    <p class="preco-card"><span class="comp-preco-card">A partir de </span>R$ 00,00</p>
+                </section>
             </div>
+            <a href="./pages/servicos.html" class="botao-maisservicos">Ver mais serviços</a>
         </section>
 
 

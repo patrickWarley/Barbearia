@@ -5,6 +5,7 @@
     --black: #000000;
     --golden: goldenrod;
     --gray: gray;
+    --darkgolden: #140F03;
 }
 
 /*reset*/
@@ -21,6 +22,7 @@ a {
 
 ul {
     list-style: none;
+    margin: none;
 }
 
 /* SECTION DEFAULT STYLING */
@@ -36,9 +38,11 @@ section {
 .header {
     background-color: var(--black);
     box-shadow: 1px 1px 5px 0px var(--gray);
-    position: sticky;
-    top: 0;
+    position: absolute;
     z-index: 9999;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .logo {
@@ -71,6 +75,10 @@ section {
 
 .menu a:hover {
     color: var(--gray);
+}
+
+.menu {
+    margin-bottom: 0;
 }
 
 .nav {
@@ -144,6 +152,28 @@ section {
 /*in devices with the min width of 768px
     the menu will be showed on the top of the page in full*/
 @media(min-width:820px) {
+
+    .card-servico {
+        width: 30%;
+        background-color: red;
+    }
+
+    .secao-servicos {
+        flex-direction: row;
+    }
+
+    /*quem somos*/
+    .texto {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
     .nav {
         max-height: none;
         top: 0;
@@ -168,3 +198,211 @@ section {
 }
 
 /*end menu css*/
+
+/*Banner section*/
+.main-banner {
+    background-image: url('../img/pexels-nikolaos-dimou-1319461.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 160px;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.botao-contato {
+    display: inline-block;
+    width: 120px;
+    padding: 16px;
+    background-color: goldenrod;
+    border-radius: 8px;
+}
+
+.botao-contato:hover {
+    background-color: black;
+}
+
+.botao-contato a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+.botao-contato:hover a {
+    color: goldenrod;
+}
+
+.titulo-botao-banner {
+    text-align: center;
+    justify-content: center;
+}
+
+
+#titulo-banner {
+    color: white;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.texto-banner {
+    font-family: 'Inter Tight', sans-serif;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-shadow: 1px 1px 1px goldenrod;
+    font-size: 24px;
+    margin: 0 80px 16px 80px;
+}
+
+.texto-banner:hover {
+    text-shadow: 1px 1px 1px goldenrod;
+}
+
+/*fim banner section*/
+
+/* Seção "Quem somos" */
+
+.quem-somos {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(43, 43, 43), black);
+    padding: 60px;
+    align-items: center;
+    min-height: 0;
+}
+
+.titulo {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 56px;
+    color: goldenrod;
+    font-family: 'Oswald', sans-serif;
+}
+
+.texto {
+    width: 95%;
+    font-family: 'Inter Tight', sans-serif;
+    color: white;
+    padding: 8px;
+    margin: 0 80 px 16px 80px;
+    text-align: justify;
+}
+
+.botao-saibamais {
+    text-decoration: none;
+    float: right;
+    padding: 6px;
+    background-color: goldenrod;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+}
+
+.botao-saibamais:hover {
+    color: black;
+    background-color: goldenrod;
+    border: 1px solid white;
+    transition: 0.2s;
+    transform: scale(1.2);
+    opacity: 90%;
+}
+
+/* fim "Quem somos"*/
+
+/*Seção serviços*/
+.secao-servicos {
+    background-color: var(--darkgolden);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.cards-servicos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.titulo-servicos {
+    margin: 24px 0 0 0;
+    font-size: 30px;
+    text-align: center;
+    color: var(--golden);
+    font-family: Antonio;
+}
+
+.card-servico {
+    justify-content: space-around;
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--golden);
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.card-servico:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+    cursor: pointer;
+    background-color: var(--golden);
+    border: 2px solid black;
+    color: white;
+    opacity: 85%;
+}
+
+.titulo-card {
+    font-size: 24px;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+.img-card {
+    margin-top: 8px;
+    width: 180px;
+    border-radius: 80px;
+}
+
+.preco-card {
+    margin-top: 8px;
+    font-size: 16px;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+.botao-maisservicos {
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    padding: 8px;
+    background-color: black;
+    color: var(--golden);
+    border: 1px solid var(--golden);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.botao-maisservicos:hover {
+    color: black;
+    background-color: var(--golden);
+    border: 1px solid black;
+    transition: 0.2s;
+    transform: scale(1.1);
+    opacity: 80%;
+}
+
+/*fim seção serviços*/
