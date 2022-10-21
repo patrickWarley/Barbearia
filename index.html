@@ -41,8 +41,8 @@
                 <div class="titulo-botao-banner">
                     <h1 id="titulo-banner">Não deixe de ficar na régua!</h1>
 
-                    <p class="texto-banner">Aqui na CorteCerto você encontra profissionais qualificados para te
-                        proporcionar a <b>melhor experiência</b> em cortes de cabelo e barba no Rio de Janeiro!</p>
+                    <p class="texto-banner"><b>Melhor experiência</b> em cortes de cabelo e barba no
+                        Rio de Janeiro!</p>
 
                     <span class="botao-contato"><a href="./pages/servicos.html">Agendar</a></span>
                 </div>
@@ -66,35 +66,27 @@
         </section>
 
         <!--Seção de serviços-->
-        <section class="secao-servicos">
-            <h1 class="titulo-servicos">Algumas de nossas especialidades</h1>
-            <div class="cards-servicos">
-                <section class="card-servico">
-                    <h3 class="titulo-card">Corte simples</h3>
-                    <img src="../img/corte-simples.jpg" alt="Corte de cabelo simples" class="img-card">
-
-                    <p class="preco-card"><span class="comp-preco-card">A partir de </span>R$ 00,00</p>
-                </section>
-
-                <section class="card-servico">
-                    <h3 class="titulo-card">Corte personalizado</h3>
-
-                    <img src="../img/corte-disfarce.jpg" alt="Corte de cabelo com disfarce" class="img-card">
-
-                    <p class="preco-card"><span class="comp-preco-card">A partir de </span>R$ 00,00</p>
-                </section>
-
-                <section class="card-servico">
-                    <h3 class="titulo-card">Barba modelada</h3>
-
-                    <a href="#"><img src="../img/barba-modelada.jpg" alt="Barba modelada" class="img-card"></a>
-
-                    <p class="preco-card"><span class="comp-preco-card">A partir de </span>R$ 00,00</p>
-                </section>
+        <section class="listServicos" id="listServicos">
+            <h1 class="mainTitle">Barba & <span class="black">cabelo</span></h1>
+            <div class="container banner-instagram">
+                <div class="imageCard imageCard-1 shadowBox">
+                    <img src="../img/barba-modelada.jpg" alt="Barba modelada" id="imgEsquerda" />
+                    <span class="text">Barba</span>
+                    <span class="text"><span class="icon tesoura"></span>$ 80<span class="icon tesoura"></span>
+                </div>
+                <div class="imageCard imageCard-2 shadowBox">
+                    <img src="../img/haircut1.jpg" alt="Corte disfarçe" id="imgMeio">
+                    <span class="text">Corte de cabelo</span>
+                    <span class="text"><span class="icon lamina"></span>$ 100<span class="icon lamina"></span></span>
+                </div>
+                <div class="imageCard imageCard-3 shadowBox">
+                    <img src="../img/haircut2.jpg" alt="Corte simples" id="imgDireita">
+                    <span class="text">Barba e cabelo</span>
+                    <span class="text"><span class="icon tesoura"></span>+ $ 150 +<span
+                            class="icon lamina"></span></span>
+                </div>
             </div>
-            <a href="./pages/servicos.html" class="botao-maisservicos">Ver mais serviços</a>
         </section>
-
 
         <!--Banner exibido na parte intermediaria da página - Beleza não é gasto, é investimento-->
         <section>
@@ -288,6 +280,7 @@
 
         <p id="texto-rodape">&copy;2022 CorteCerto Barber Studio - Projeto do Grupo 2 - Programadores Cariocas</p>
     </footer>
+    <script src="../js/servicos.js"></script>
 </body>
 
 </html>

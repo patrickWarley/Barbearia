@@ -1,11 +1,13 @@
+//some interations change based on the size of the screen so
+//I need a event listener to identify when that happens and call the function init
+// don't know if it is the best approach
+window.addEventListener('resize', init);
 
 //add the onclick events to the cards
-
 function addEventsToCards() {
   var imgEsquerda = document.getElementById("imgEsquerda");
   var imgDireita = document.getElementById("imgDireita");
   var meio = document.getElementById("imgMeio");
-
   var indexGen = getZindex();
 
   imgEsquerda.addEventListener('click', (evt) => {
@@ -54,9 +56,10 @@ function formAlertMessage(msg) {
 function init() {
 
   //get the form and add an event listener
+  //this is the event for the "formulario agendar"
   var form = document.getElementById("agendarFormulario");
 
-  form.addEventListener("submit", (evt) => {
+  form?.addEventListener("submit", (evt) => {
     evt.preventDefault();
     let target = evt.target;
 
@@ -69,7 +72,11 @@ function init() {
   });
 
   //add the animation events
-  addEventsToCards();
+  //only add the events if we are using a big screen
+  let mql = window.matchMedia('(min-width:820px)');
+
+  if (mql.matches)
+    addEventsToCards();
 }
 
 function validateForm(formData, err) {

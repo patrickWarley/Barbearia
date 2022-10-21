@@ -6,6 +6,7 @@
     --golden: goldenrod;
     --gray: gray;
     --darkgolden: #140F03;
+    --gray: #3d3636;
 }
 
 /*reset*/
@@ -35,6 +36,11 @@ section {
 
 /*Menu styling*/
 /*responsive menu taken from https: //blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/*/
+
+.planoDeFundoParallax {
+    background-attachment: fixed
+}
+
 .header {
     background-color: var(--black);
     box-shadow: 1px 1px 5px 0px var(--gray);
@@ -149,17 +155,21 @@ section {
     top: 0;
 }
 
+.hide-small-screen {
+    display: none;
+}
+
 /*in devices with the min width of 768px
     the menu will be showed on the top of the page in full*/
 @media(min-width:820px) {
 
+    .hide-small-screen {
+        display: block;
+    }
+
     .card-servico {
         width: 30%;
         background-color: red;
-    }
-
-    .secao-servicos {
-        flex-direction: row;
     }
 
     /*quem somos*/
@@ -203,7 +213,7 @@ section {
 .main-banner {
     background-image: url('../img/pexels-nikolaos-dimou-1319461.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw 100vh;
 
     display: flex;
     align-items: center;
@@ -250,6 +260,8 @@ section {
     color: white;
     font-size: 50px;
     font-family: 'Oswald', sans-serif;
+    text-shadow: 1px 1px 10px black;
+    margin-bottom: 30px;
 }
 
 .texto-banner {
@@ -319,90 +331,227 @@ section {
 /* fim "Quem somos"*/
 
 /*Seção serviços*/
-.secao-servicos {
-    background-color: var(--darkgolden);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 24px;
+
+header {
+    margin-bottom: 0;
 }
 
-.cards-servicos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+.listServicos {
+    width: 100vw;
+    height: fit-content;
+    background-image: url('../img/indexServiceBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.titulo-servicos {
-    margin: 24px 0 0 0;
-    font-size: 30px;
-    text-align: center;
-    color: var(--golden);
-    font-family: Antonio;
+.banner-instagram {
+    width: 100%;
+    height: 100%;
 }
 
-.card-servico {
-    justify-content: space-around;
-    margin: 32px;
+.imageCard {
+    width: 100%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid var(--golden);
-    border-radius: 16px;
-    padding: 16px;
-}
-
-.card-servico:hover {
-    transform: scale(1.1);
-    transition: 0.4s;
-    cursor: pointer;
-    background-color: var(--golden);
-    border: 2px solid black;
-    color: white;
-    opacity: 85%;
-}
-
-.titulo-card {
-    font-size: 24px;
-    color: black;
-    font-family: 'Oswald', sans-serif;
-}
-
-.img-card {
-    margin-top: 8px;
-    width: 180px;
-    border-radius: 80px;
-}
-
-.preco-card {
-    margin-top: 8px;
-    font-size: 16px;
-    color: black;
-    font-family: 'Oswald', sans-serif;
-}
-
-.botao-maisservicos {
+    border-radius: 10px;
     text-align: center;
-    text-decoration: none;
-    margin: auto;
-    padding: 8px;
-    background-color: black;
+    background-color: var(--darkgolden);
     color: var(--golden);
-    border: 1px solid var(--golden);
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    font-family: 'Oswald', sans-serif;
+
+    margin-bottom: 20px;
+    font-family: Antonio;
+    font-weight: 600;
 }
 
-.botao-maisservicos:hover {
+.imageCard img {
+    margin-top: 20px;
+    width: 98%;
+    height: 400px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 5px;
+}
+
+.tesoura {
+    background-image: url("../img/icons/tesoura.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lamina {
+    background-image: url("../img/icons/lamina_barbear.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imageCard .icon {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+.listServicos .mainTitle {
+    color: var(--golden);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.50);
+}
+
+.listServicos .black {
     color: black;
-    background-color: var(--golden);
-    border: 1px solid black;
-    transition: 0.2s;
-    transform: scale(1.1);
-    opacity: 80%;
+    text-shadow: 1px 1px 10px var(--golden);
+}
+
+.mainTitle {
+    font-family: Antonio;
+    font-size: 60px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+@media(min-width:820px) {
+    .banner-instagram {
+        position: relative;
+        display: flex;
+        flex-wrap: row;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        padding: 10px;
+        width: 100%;
+        height: 600px;
+    }
+
+    .shadowBox {
+        box-shadow: 10px 10px 55px 12px rgba(0, 0, 0, 0.50);
+    }
+
+    .imageCard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--gray);
+        width: 30%;
+        height: 600px;
+        transition: all 0s;
+        z-index: 0;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .imageCard .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: goldenrod;
+        margin-top: 5px;
+        font-size: 1.2em;
+    }
+
+    .imageCard img {
+        margin-top: 20px;
+    }
+
+    .imageCard-1 {
+        margin-right: 40%;
+    }
+
+    .imageCard-2 {}
+
+    .imageCard-3 {
+        margin-left: 40%;
+    }
+
+    .imageCard:hover,
+    .imageCard-1:hover,
+    .imageCard-2:hover {
+        transition-delay: 1s;
+    }
+
+    .activeRight {
+        animation: marginRight;
+        animation-duration: 2s;
+    }
+
+    .activeLeft {
+        animation: marginLeft;
+        animation-duration: 2s;
+    }
+
+    .activeMeio {
+        animation: fade;
+        animation-duration: 2s;
+    }
+
+    @keyframes marginRight {
+        0% {
+            margin-right: 40%;
+        }
+
+        50% {
+            margin-right: 70%;
+        }
+
+        100% {
+            margin-right: 40%;
+        }
+    }
+
+    @keyframes marginLeft {
+        0% {
+            margin-left: 40%;
+        }
+
+        50% {
+            margin-left: 70%;
+        }
+
+        100% {
+            margin-left: 40%;
+        }
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 100%;
+        }
+
+        50% {
+            opacity: 50%;
+        }
+
+        100% {
+            opacity: 100%;
+        }
+    }
+
+    .imageCard-1 img,
+    .imageCard-2 img,
+    .imageCard img {
+        width: 90%;
+        height: 80%;
+    }
+
+    .reveal {
+        position: relative;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 2s all ease;
+    }
+
+    /* all elements with the class reveal will be shown when the class active is added*/
+    .reveal.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /*fim seção serviços*/

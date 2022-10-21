@@ -2,10 +2,6 @@
 
 /*reset*/
 
-:root {
-    --gray: #3d3636;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -27,11 +23,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.planoDeFundoParallax {
-    background-attachment: fixed
-}
-
 
 /*Menu*/
 
@@ -104,159 +95,6 @@ header {
 
 
 /*banner*/
-
-.banner-instagram {
-    position: relative;
-    display: flex;
-    flex-wrap: row;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    padding: 10px;
-    width: 100%;
-    height: 600px;
-}
-
-.shadowBox {
-    box-shadow: 10px 10px 55px 12px rgba(0, 0, 0, 0.50);
-}
-
-.imageCard .icon {
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-}
-
-.tesoura {
-    background-image: url("../img/icons/tesoura.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.lamina {
-    background-image: url("../img/icons/lamina_barbear.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.imageCard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    background-color: var(--gray);
-    width: 33%;
-    height: 600px;
-    transition: all 0s;
-    z-index: 0;
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.imageCard .text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: goldenrod;
-    margin-top: 5px;
-    font-size: 1.2em;
-}
-
-.imageCard img {
-    margin-top: 20px;
-    animation: zoomIn 2s;
-}
-
-.imageCard-1 {
-    margin-right: 40%;
-}
-
-.imageCard-2 {}
-
-.imageCard-3 {
-    margin-left: 40%;
-}
-
-.imageCard:hover,
-.imageCard-1:hover,
-.imageCard-2:hover {
-    transition-delay: 1s;
-}
-
-.activeRight {
-    animation: marginRight;
-    animation-duration: 2s;
-}
-
-.activeLeft {
-    animation: marginLeft;
-    animation-duration: 2s;
-}
-
-.activeMeio {
-    animation: fade;
-    animation-duration: 2s;
-}
-
-@keyframes marginRight {
-    0% {
-        margin-right: 40%;
-    }
-    50% {
-        margin-right: 70%;
-    }
-    100% {
-        margin-right: 40%;
-    }
-}
-
-@keyframes marginLeft {
-    0% {
-        margin-left: 40%;
-    }
-    50% {
-        margin-left: 70%;
-    }
-    100% {
-        margin-left: 40%;
-    }
-}
-
-@keyframes fade {
-    0% {
-        opacity: 100%;
-    }
-    50% {
-        opacity: 50%;
-    }
-    100% {
-        opacity: 100%;
-    }
-}
-
-@keyframes zoomIn {
-    0% {
-        transform: scale(1.5);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.imageCard-1 img,
-.imageCard-2 img,
-.imageCard img {
-    width: 90%;
-    height: 80%;
-}
-
-header {
-    margin-bottom: 0;
-}
-
-
 /*Configuração menu topo de pagina*/
 
 .conjunto-opcoes-menu {
