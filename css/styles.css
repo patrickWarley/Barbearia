@@ -231,10 +231,13 @@ section {
     padding: 16px;
     background-color: goldenrod;
     border-radius: 8px;
+    box-shadow: 5px 2px 5px var(--darkgolden);
+    transition: box-shadow 0.2s ease-in;
 }
 
 .botao-contato:hover {
     background-color: black;
+    box-shadow: 5px 2px 5px goldenrod;
 }
 
 .botao-contato a {
@@ -555,3 +558,122 @@ header {
 }
 
 /*fim seção serviços*/
+
+/*banner intermediario*/
+.middle-banner {
+    padding: 0px;
+    width: 100vw;
+}
+
+.call-to-action {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/pexels-mídia-897273.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--gray);
+    background-blend-mode: soft-light;
+}
+
+.call-to-action .container .botao-contato {
+    margin-top: 20px;
+    text-align: center !important;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.secao-depoimentos {
+    background-color: white;
+}
+
+.cards-depoimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo-depoimentos {
+    margin: 24px 0 0 0;
+    font-size: 56px;
+    text-align: center;
+    color: goldenrod;
+    font-family: 'Oswald', sans-serif;
+}
+
+.card-depoimentos {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 80%;
+    margin-bottom: 10px;
+
+    border: 2px solid goldenrod;
+    border-radius: 16px;
+    padding: 8px;
+}
+
+.titulo-card-depoimentos {
+    font-size: 24px;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+.img-card {
+    margin-top: 8px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.texto-card {
+    font-size: 14px;
+    font-style: italic;
+    color: black;
+    font-family: 'Lato';
+    text-align: justify;
+}
+
+@media(min-width:820px) {
+
+    /*on a big screen the middle banner will have 2 columns
+    I think that adding the contact form here will look good?*/
+    .middle-banner {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .call-to-action {
+        width: 50%;
+    }
+
+    .secao-depoimentos {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards-depoimentos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 20px;
+        overflow: scroll;
+    }
+
+    .card-depoimentos {
+        width: 400px;
+    }
+}
