@@ -1,389 +1,182 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,200&family=Lato:wght@300;400;700;900&family=Oswald&display=swap');
-
-/*reset*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
 body {
-    font-family: 'Oswald', sans-serif;
-    background-image: url("../img/servicostopo2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  font-family: 'Oswald', sans-serif;
+  background-image: url("../img/servicostopo2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-/*Menu*/
-
-header {
-    font-family: 'Oswald', sans-serif;
-}
-
-.servicos {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 100px;
-}
-
-.servicos .fundoMenu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--gray);
-    padding: 30px;
-    opacity: 90%;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.opcao-menu {
-    font-family: 'Oswald', sans-serif;
-}
-
-.servicos .menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    position: relative;
-    background-color: transparent;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-}
-
-.servicos .menu .borda-logo {
-    color: red;
-    border: 2px solid white;
-    border-radius: 360px;
-    padding: 3px;
-}
-
-.servicos .menu .borda-logo:hover {
-    color: blue;
-    border: 2px solid red;
-    transition: 0.5s;
-}
-
-.servicos .menu .logo {
-    color: blue;
-    border: 2px solid red;
-    background-color: white;
-    padding: 2px;
-    border-radius: 360px;
-    width: 60px;
-    height: 60px;
-}
-
-.servicos .menu .logo:hover {
-    color: red;
-    border: 2px solid blue;
-    transition: 0.5s;
-}
-
-
-/*banner*/
-/*Configuração menu topo de pagina*/
-
-.conjunto-opcoes-menu {
-    border: none !important;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Oswald', sans-serif;
-}
-
-
-/*banner*/
-
 
 /*Seção de resumo*/
 
 .mainTitle {
-    font-family: 'Oswald', sans-serif;
-    font-size: 60px;
-    color: white;
-    text-shadow: 4px 4px 12px goldenrod;
-    margin: 50px 50px;
-}
-
-.apresentacao {
-    width: 50%;
-    color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
+  color: white;
+  text-shadow: 4px 4px 12px goldenrod;
+  margin: 50px 50px;
 }
 
 .botao {
-    margin-top: 20px;
-    display: inline-block;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: -4px 1px 37px -5px rgba(0, 0, 0, 0.90);
-}
-
-.botaoVejaMais {
-    background-color: black;
-    color: goldenrod;
-    border: 1px solid goldenrod;
-}
-
-.botaoVejaMais:hover {
-    background-color: goldenrod;
-    color: black;
+  margin-top: 20px;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: -4px 1px 37px -5px rgba(0, 0, 0, 0.90);
 }
 
 section {
-    padding: 50px;
-    min-height: 90vh;
-    position: relative;
-    text-align: center;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
 }
 
 .resumo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 50px;
-    padding-top: 20px;
+  width: 100vw;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column-reverse;
 }
-
-
-/*servicos, com preço e tal*/
-
-.listServicos {
-    position: relative;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background: rgb(255, 255, 255);
-    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(110, 110, 110, 1) 89%, rgba(78, 77, 77, 1) 100%);
-}
-
-.listServicos .mainTitle {
-    color: black;
-    font-size: 60px;
-    text-shadow: none;
-    margin-top: 10px;
-}
-
-.content {
-    position: relative;
-    margin-top: 50px;
-    width: 60%;
-}
-
 
 /*formularioAgenda*/
 
 .alert.show {
-    opacity: 100%;
+  opacity: 100%;
 }
 
 .alert {
-    display: block;
-    opacity: 0%;
-    width: 100%;
-    color: #b0c5d1;
-    padding: 10px;
-    transition: all 1s;
+  display: block;
+  opacity: 0%;
+  width: 100%;
+  color: #b0c5d1;
+  padding: 10px;
+  transition: all 1s;
 }
 
 .botaoEnviar {
-    background-color: black;
-    color: goldenrod;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-    padding: 10px 20px;
-    border: 1px solid goldenrod;
+  background-color: black;
+  color: goldenrod;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  padding: 10px 20px;
+  border: 1px solid goldenrod;
 }
 
 .botaoEnviar:hover {
-    background-color: goldenrod;
-    color: black;
-    cursor: pointer;
+  background-color: goldenrod;
+  color: black;
+  cursor: pointer;
 }
 
 .formularioAgenda {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: black;
-    font-family: 'Oswald', sans-serif;
-    width: 60%;
-    border-radius: 10px;
-    box-shadow: 10px 10px 55px 12px rgba(0, 0, 0, 0.50);
+  width: 100%;
+  color: white;
+  background-color: black;
+  font-family: 'Oswald', sans-serif;
+  border-radius: 10px;
+  box-shadow: 10px 10px 55px 12px rgba(0, 0, 0, 0.50);
 }
 
 .formContainer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    text-align: center;
-    margin-top: 50px;
-    font-size: 1.5em;
+  margin-top: 50px;
+  font-size: 1.5em;
 }
 
 .formContainer form {
-    margin-top: 50px;
-    justify-content: center;
+  margin-left: 20px;
+  margin-top: 20px;
+  justify-content: center;
 }
 
 .formContainer select {
-    font-size: large;
-    padding: 10px;
-    border-radius: 10px;
+  max-width: 200px;
+  font-size: large;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .formContainer input {
-    width: 100%;
-    border-radius: 10px;
-    padding: 10px;
-    border: 0;
-    height: 50px;
-    font-size: large;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  border: 0;
+  height: 50px;
+  font-size: large;
 }
 
 .formContainer label {
-    margin-bottom: 10px;
-    align-self: flex-start;
+  margin-bottom: 10px;
+  align-self: flex-start;
 }
 
-.col {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0 10px;
+.col-servicos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
 }
 
-.row {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: inherit;
-    margin-bottom: 10px;
-}
-
-.equipe {
-    display: flex;
-    align-items: flex-start;
+.row-servicos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: inherit;
+  margin-bottom: 10px;
 }
 
 .equipe-section {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .equipeDescr {
-    padding-left: 20px;
-    padding-top: 20px;
-    font-size: medium;
+  padding: 20px;
+  font-size: medium;
 }
 
 .fotoEquipe {
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
-    margin-left: 20px;
-    transition: transform;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+  transition: transform;
 }
 
 .equipecard {
-    align-items: center;
-    height: 200px;
-    background-color: black;
-    border-radius: 10px;
-    color: white;
+  align-items: center;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
 }
 
 .fotoEquipe:hover {
-    transform: scale(1.4);
+  transform: scale(1.4);
 }
 
-
-/*footer*/
-
-.iconFooter {
-    padding: 10px;
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
-    color: goldenrod;
-    cursor: pointer;
+.logo-servicos {
+  display: none;
+  position: absolute;
+  width: 100px !important;
+  height: 100px !important;
 }
 
-.iconFooter a,
-a:hover,
-a:visited {
-    text-decoration: none;
-}
+@media(min-width:1200px) {
+  .resumo {
+    flex-direction: row;
+    flex-flow: row-reverse;
+  }
 
-.instagram:hover {
-    display: block;
-    color: #dd2a7b;
-    ;
-    font-size: 40px;
-}
+  .equipe-section {
+    width: 40%;
+  }
 
-.whatsapp:hover {
-    display: block;
-    color: #25D366;
-    font-size: 40px;
-}
-
-.facebook:hover {
-    display: block;
-    color: #1778f2;
-    font-size: 40px;
-}
-
-.tiktok:hover {
-    display: block;
-    color: white;
-    font-size: 40px;
-    text-shadow: 1px 1px 1px #dd2a7b;
-}
-
-.redesSocias {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.footerPage {
-    font-family: 'Oswald', sans-serif;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    width: 100%;
-    height: 200px;
-    background: linear-gradient(rgb(43, 43, 43), black);
-    text-align: center;
-    color: goldenrod;
-}
-
-.informacoes {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.sub-container-rodape {
-    margin: 16px 0 0 0;
+  .formularioAgenda {
+    width: 60%;
+    min-height: 100vh;
+  }
 }
