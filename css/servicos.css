@@ -82,12 +82,13 @@ section {
 }
 
 .formContainer {
+  margin: 10px;
   margin-top: 50px;
   font-size: 1.5em;
 }
 
 .formContainer form {
-  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 20px;
   justify-content: center;
 }
@@ -178,5 +179,13 @@ section {
   .formularioAgenda {
     width: 60%;
     min-height: 100vh;
+  }
+}
+
+
+@media(max-width:820px) {
+  .row-servicos {
+    flex-direction: column;
+    text-align: center;
   }
 }
