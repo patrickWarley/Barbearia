@@ -230,7 +230,7 @@ main {
   height: 100%;
 }
 
-.botao-contato {
+.botao-agendar {
   display: inline-block;
   width: 120px;
   padding: 16px;
@@ -240,12 +240,12 @@ main {
   transition: box-shadow 0.2s ease-in;
 }
 
-.botao-contato:hover {
+.botao-agendar:hover {
   background-color: black;
   box-shadow: 5px 2px 5px goldenrod;
 }
 
-.botao-contato a {
+.botao-agendar a {
   text-decoration: none;
   color: black;
   cursor: pointer;
@@ -254,7 +254,7 @@ main {
   font-weight: bold;
 }
 
-.botao-contato:hover a {
+.botao-agendar:hover a {
   color: goldenrod;
 }
 
@@ -581,7 +581,7 @@ header {
   background-blend-mode: soft-light;
 }
 
-.call-to-action .container .botao-contato {
+.call-to-action .container .botao-agendar {
   margin-top: 20px;
   text-align: center !important;
 }
@@ -1093,5 +1093,18 @@ button {
   font-size: medium;
 }
 
+.botao-contato {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  background-color: var(--golden);
+  box-shadow: 1px 1px 5px 0px var(--gray);
+}
+
+.botao-contato:hover {
+  color: white;
+  background-color: var(--bronze);
+}
 
 /*Legenda dos mapas*/

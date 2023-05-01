@@ -15,14 +15,6 @@ body {
   margin: 50px 50px;
 }
 
-.botao {
-  margin-top: 20px;
-  display: inline-block;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: -4px 1px 37px -5px rgba(0, 0, 0, 0.90);
-}
-
 section {
   width: 100vw;
   max-width: 100%;
